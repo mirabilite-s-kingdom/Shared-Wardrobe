@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/mainpage.css" />
+    <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+    />
+    <!-- font text -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>仓鼠共享衣橱</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <ul class="navbar">
+            <!--等待更改链接-->
+            <li class="navbar__item-1"><a href="dressed" target="_self">正装</a></li>
+            <li class="navbar__item-2"><a href="weddingdress" target="_self">婚纱</a></li>
+            <li class="navbar__item-3"><a href="hignend" target="_self">高端品牌</a></li>
+            <li class="navbar__item-4"><a href="fastfashion" target="_self">快时尚品牌</a></li>
+            <li class="navbar__item-5"><a href="/mainpage/shopcart">购物车</a></li>
+            <li class="navbar__item-6"><a href="changeorder">修改订单</a></li>
+            <li class="navbar__item-7"><a href="#">联系我们</a></li>
+        </ul>
+        <div class="searching-box">
+            <input class="searching-input" type="text" placeholder="请输入搜索商品">
+            <input class="searching-button" type="button" value="搜索"></input>
+        </div>
+        <div class="header__icon">
+            <a href="profile"><i class="far fa-user"></i></a>
+            <a href="/login"><i class="far fa-sign-out"></i> </a>
+        </div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container intro__inner">
+        <div>
+            <nav>
+                <ul id="img">
+
+                    <li >
+                        <div class="intro__content">
+                            <h4 class="intro__title">关 注 最 新</h4>
+                            <h1 class="intro__big-text">Hot Selling</h1>
+                            <p class="intro__para">
+                                我们可以为您提供的四大产品服务：<br>
+                                种类良多、价格实惠的正装系列<br>
+                                款式丰富、精益求精的婚纱系列<br>
+                                低调奢华、优雅大气的高端品牌系列<br>
+                                物美价廉、高性价比的快时尚品牌系列<br>
+                            </p>
+                            <a href="/mainpage/"><button class="intro__btn">
+                                了解更多
+                                <i class="fas fa-arrow-right"></i>
+                            </button></a>
+                        </div>
+                        <a><img class="img3" height="431px" width="650px" src="../../static/images/test3.png" alt=""></a>
+                    </li>
+
+                    <li >
+                        <div class="intro__content">
+                            <h4 class="intro__title">关 注 最 新</h4>
+                            <h1 class= "intro__big-text">Hot Selling</h1>
+                            <p class="intro__para">
+                                束带设计的棉质衬衫式连衣裙，搭配扣式衣领与扣袢衣袖<br>
+                                焕新装饰品牌时装秀 Horseferry 印花<br>
+                                来自莎士比亚「亨利六世：第三部分」的经典名句<br>
+                                “MY CROWN IS IN MY HEART NOT ON MY HEAD”<br>
+                                SLOGEN：生活中的美好事物永存不移。<br>
+                                SLOGEN：The good things in life never change.<br>
+                            </p>
+                            <a href="/mainpage/hignend"><button class="intro__btn">
+                                订   购
+                                <i class="fas fa-arrow-right"></i>
+                            </button></a>
+                        </div>
+                        <a><img class="img1" height="853px" width="533px" src="../../static/images/test.png" alt=""></a>
+                    </li>
+
+                    <li class="opa-on">
+                        <div class="intro__content">
+                            <h4 class="intro__title">关 注 最 新</h4>
+                            <h1 class="intro__big-text">Hot Selling</h1>
+                            <p class="intro__para">
+                                [ ALBIORIX ]<br>
+                                半透视效果鱼尾婚纱<br>
+                                华丽的星星图案，与纤细的肩带连为一体<br>
+                                恰到好处的腰身配以华丽的裙摆，闪亮的刺绣在裙身上跳跃出灵动美感<br>
+                                "在自己的婚礼上当一回真正的明星。"<br>
+                            </p>
+                            <a href="weddingdress"><button class="intro__btn">
+                                订   购
+                                <i class="fas fa-arrow-right"></i>
+                            </button></a>
+                        </div>
+                        <a href="/mainpage/weddingdress">
+                            <img class="img2" height="857px" width="640px" src="../../static/images/test2.png" alt="">
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<ul id="index">
+    <li class="on"></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<section class="trending">
+    <div class="container trending__inner">
+        <div class="trending__list">
+            <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-truck"></i>
+                    <h1 class="shipping-box__title">包邮</h1>
+                    <p class="shipping-box__text">总额 大于 ￥88</p>
+                </div>
+            </div>
+            <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-warehouse"></i>
+                    <h1 class="shipping-box__title">七天内合理退货</h1>
+                    <p class="shipping-box__text">购买安心</p>
+                </div>
+            </div>
+            <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-user"></i>
+                    <h1 class="shipping-box__title">专属客服</h1>
+                     <p class="shipping-box__text">保障服务</p>
+                </div>
+            </div>
+        </div>
+        <div class="trending-products">
+            <h1 class="trending-products__title">正装系列</h1>
+            <div class="trending-products__separator">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="trending-products__list">
+                <button class="trending-products__btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="trending-products__btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="trending-products__item">
+                    <div class="trending-products__image">
+                        <a href="dressed/100000000">
+                            <img
+                                src="../../static/dressed/dressed1.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">罗蒙 小西服套装</h2>
+                    <p class="trending-products__des">优雅商务休闲范，高亲和度高舒适</p>
+                    <h3 class="trending-products__price">￥498.00</h3>
+                </div>
+
+                <div class="trending-products__item">
+                    <div class="trending-products__image">
+                        <a href="dressed/100000004">
+                        <img
+                                src="../../static/dressed/dressed2.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">J-ME 职业套装</h2>
+                    <p class="trending-products__des">OL 时尚 简约 优雅 商务风 都市丽人</p>
+                    <h3 class="trending-products__price">￥308.00</h3>
+                </div>
+
+                <div class="trending-products__item">
+                    <div class="trending-products__image">
+                        <a href="dressed/100000006">
+                        <img
+                                src="../../static/dressed/dressed3.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">KAILIAN 长袖西装</h2>
+                    <p class="trending-products__des">西装领 C字扣 精要干练 秋冬职业套装</p>
+                    <h3 class="trending-products__price">￥219.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    </div>
+    <div class="background background-right"></div>
+    <div class="container banner__inner">
+        <div class="banner__content">
+            <h2 class="banner__discount">婚纱系列</h2>
+            <h1 class="banner__title">婚纱租赁八折 80%Discount</h1>
+            <p class="banner__para">
+                一线婚纱热销中
+            </p>
+            <a href="weddingdress"><button class="banner__btn">马上购物</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="trending">
+    <div class="container trending__inner">
+        <div class="trending-products">
+            <h1 class="trending-products__title">婚纱系列</h1>
+            <div class="trending-products__separator">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="trending-products__list-2">
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000000"><img
+                                src="../../static/wedding/wedding1.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">BSHNZH 一字肩婚纱</h2>
+                    <p class="trending-products__des">V领收腰 版型优雅</p>
+                    <h3 class="trending-products__price">￥1699.00</h3>
+                </div>
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000003"><img
+                                src="../../static/wedding/wedding2.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">FuNai 宫廷立领婚纱</h2>
+                    <p class="trending-products__des">浅香槟色 绑带 网纱拖尾</p>
+                    <h3 class="trending-products__price">￥3926.00</h3>
+                </div>
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000004"><img
+                                src="../../static/wedding/wedding3.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">衣莜季 复古婚纱</h2>
+                    <p class="trending-products__des">复古方领 半露美肩</p>
+                    <h3 class="trending-products__price">￥2958.00</h3>
+                </div>
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000006"><img
+                                src="../../static/wedding/wedding4.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">Lcxmnd 星空一字肩婚纱</h2>
+                    <p class="trending-products__des">精工细作 气质优雅奢华</p>
+                    <h3 class="trending-products__price">￥1828.00</h3>
+                </div>
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000001"><img
+                                src="../../static/wedding/wedding5.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">红妆饰佳 一字肩婚纱</h2>
+                    <p class="trending-products__des">浅肤色软纱 花朵开放在胸前</p>
+                    <h3 class="trending-products__price">￥598.00</h3>
+                </div>
+                <div class="trending-products__item card-2">
+                    <div class="trending-products__image">
+                        <a href="weddingdress/200000002"><img
+                                src="../../static/wedding/wedding6.png"
+                                alt="shirt"
+                        /></a>
+                    </div>
+                    <h2 class="trending-products__name">范戈堡 秋冬主婚纱</h2>
+                    <p class="trending-products__des">轻纱细语 蕾丝大气温柔</p>
+                    <h3 class="trending-products__price">￥533.00</h3>
+                </div>
+        </div>
+            <a href="weddingdress"><button class="banner__btn load__btn">了解更多</button></a>
+    </div>
+    </div>
+</section>
+
+<section class="deal">
+    <div class="deal__overlay-bg">
+        <div class="container deal__inner">
+            <div class="deal__content">
+                <h2 class="deal__intro">折扣 Discount</h2><br>
+                <h1 class="deal__title">快 时 尚 产 品<br><br>七 折 起 售<br>70% Discount</h1>
+                <p class="deal__para">
+                    UNIQLO 、Zara 、 UR 等品牌 火热销售中
+                </p>
+                <a href="fastfashion"><button class="banner__btn load__btn btn__type-2">了解更多</button></a>
+            </div>
+            <div class="deal__image">
+                <img
+                        src="../../static/images/fast-fashion.png"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="best-selling">
+    <div class="div container best-selling__inner">
+        <h1 class="trending-products__title">快时尚品牌系列</h1>
+        <div class="trending-products__separator">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="trending-products__list">
+            <button class="trending-products__btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="trending-products__btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="trending-products__item">
+                <div class="trending-products__image">
+                    <a href="fastfashion/400000009"><img
+                            src="../../static/fastfashion/fastfashion1.png"
+                            alt="shirt"
+                    /></a>
+                </div>
+                <h2 class="trending-products__name">糖力 方领仿钻收腰连衣裙</h2>
+                <p class="trending-products__des">清新蓝 经典A字型 羊腿袖收腰</p>
+                <h3 class="trending-products__price">￥379.00</h3>
+            </div>
+
+            <div class="trending-products__item">
+                <div class="trending-products__image">
+                    <a href="fastfashion/400000004"><img
+                            src="../../static/fastfashion/fastfashion2.png"
+                            alt="shirt"
+                    /></a>
+                </div>
+                <h2 class="trending-products__name">COCOBELLA复古压褶衬衫</h2>
+                <p class="trending-products__des">竹节纹理 压褶面料 高度考究</p>
+                <h3 class="trending-products__price">￥299.00</h3>
+            </div>
+
+            <div class="trending-products__item">
+                <div class="trending-products__image">
+                    <a href="fastfashion/400000005"><img
+                            src="../../static/fastfashion/fastfashion3.png"
+                            alt="shirt"
+                    /></a>
+                </div>
+                <h2 class="trending-products__name">ONLY迪士尼联名宽松T恤</h2>
+                <p class="trending-products__des">创意印花 卡通布贴 时尚落肩袖</p>
+                <h3 class="trending-products__price">￥156.24</h3>
+            </div>
+
+            <div class="trending-products__item">
+                <div class="trending-products__image">
+                    <a href="fastfashion/400000006"><img
+                            src="../../static/fastfashion/fastfashion4.jpg"
+                            alt="shirt"
+                    /></a>
+                </div>
+                <h2 class="trending-products__name">拓谷 潮牌字母印花短袖</h2>
+                <p class="trending-products__des">精选面料 做工有型 态度不凡</p>
+                <h3 class="trending-products__price">￥268.00</h3>
+            </div>
+
+        </div>
+        <a href="/mainpage/digital"><button class="banner__btn load__btn">了解更多</button></a>
+    </div>
+</section>
+
+<section class="story">
+    <div class="container story__inner">
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__overlay">
+        <div class="container footer__inner">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Created by</p>
+                    <ul class="link-list">
+                      <li class="contact-list__item">安徽大学</li>
+                      <li class="contact-list__item">计算机科学与技术学院</li>
+                        <li class="contact-list__item">计算机科学与技术专业学生</li>
+                        <li class="contact-list__item">戴铭洁、</li>
+                        <li class="contact-list__item">王乐乐、</li>
+                        <li class="contact-list__item">章悦</li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Populer Tags</h2>
+                    <ul class="link-list">
+                        <li class="link-list__item"><a href="#">正装</a></li>
+                        <li class="link-list__item"><a href="#">婚纱</a></li>
+                        <li class="link-list__item"><a href="#">高端</a></li>
+                        <li class="link-list__item"><a href="#">快时尚</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Contact-Us</h2>
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            安徽大学磬苑校区
+                        </li>
+                        <li class="contact-list__item">(+86) 18815799331</li>
+                        <li class="contact-list__item">mirabiliteee@gmail.com</li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Rss</h2>
+                    <div class="contact-box">
+                        <p class="contact-box__title">订阅最新消息</p>
+                        <input
+                                class="contact-box__input"
+                                type="text"
+                                placeholder="Email"
+                        />
+                        <button class="contact-box__btn">确定订阅</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="footer__last-text">
+                2020 . All Rights Reserved Developed By 安徽大学 计算机科学与技术.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a class="move-top__btn" href="#"><i class="fas fa-arrow-up"></i></a>
+</body>
+
+<script>
+    function moveImg(list,index) {
+        for(var i=0;i<list.length;i++){
+            if(list[i].className=='opa-on'){//清除li的透明度样式
+                list[i].className='';
+            }
+        }
+        list[index].className='opa-on';
+    }
+    function moveIndex(list,num) {//移动小圆圈
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].className == 'on') {//清除li的背景样式
+                list[i].className = '';
+            }
+        }
+        list[num].className = 'on';
+    }
+    var imgList=document.getElementById('img').getElementsByTagName('li');
+    var list=document.getElementById('index').getElementsByTagName('li');
+    var index=0;
+    var timer;
+
+    for(var i=0;i<list.length;i++){//鼠标覆盖上哪个小长方形，图片就移动到哪个小圆圈，并停止
+        list[i].index=i;
+        list[i].onmouseover= function () {
+
+            var clickIndex=parseInt(this.index);
+            index=clickIndex;
+
+            moveImg(imgList,index);
+            moveIndex(list,index);
+            clearInterval(timer);
+        };
+        list[i].onmouseout= function () {//移开后继续轮播
+            play();
+        };
+
+    }
+
+    var nextMove=function(){
+        index+=1;
+        if(index>=3){
+            index=0;
+        }
+        moveImg(imgList,index);
+        moveIndex(list,index);
+    };
+    var play=function(){
+        timer=setInterval(function(){
+            nextMove();
+        },3000);
+    };
+</script>
+
+</html>

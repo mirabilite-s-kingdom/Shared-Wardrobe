@@ -1,0 +1,101 @@
+
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">#}
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓鼠共享衣橱</title>
+    <link rel="stylesheet" href="../../static/register.css">
+</head>
+<body>
+<video id="v1" autoplay loop muted>
+    <source src="../../static/video/homepage-lead-video-001.mp4" type="video/mp4"  />
+    <link type="text/css" rel="stylesheet" href="../../static/register.css">
+</video>
+    <div class="title">
+        仓鼠共享衣橱
+    </div>
+    <div class="translucent_back"></div>
+    <div class="main">
+        <div>
+            <p>用户注册</p>
+        </div>
+        <hr width="270"/>
+        <form method="POST">
+            {% csrf_token %}
+            <div>
+                {% if username == '用户名' %}
+                    <input type="text" name="username" placeholder="用户名" class="input_box" />
+                {% elif username == '' %}
+                    <input type="text" name="username" placeholder="请输入用户名" class="input_box2" />
+                {% elif username == '用户名已被占用' %}
+                    <input type="text" name="username" placeholder="用户名已被占用" class="input_box2" />
+                {% else %}
+                    <input type="text" name="username" class="input_box" value = {{ username }} />
+                {% endif %}
+            </div>
+            {% if passwords1 == passwords2 %}
+                <div>
+                    {% if passwords1 == '密码' %}
+                        <input type = "password" name="passwords1" id="password1" placeholder="密码" class="input_box" />
+                    {% elif passwords1 == '' %}
+                        <input type = "password" name="passwords1" id="password1" placeholder="请输入密码" class="input_box2" />
+                    {% else %}
+                        <input type = "password" name="passwords1" id="password1" value={{ passwords1 }} class="input_box" />
+                    {% endif %}
+                </div>
+                <div>
+                    {% if passwords2 == '密码' %}
+                        <input type = "password" name="passwords2" id="password2" placeholder="确认密码" class="input_box"/>
+                    {% elif passwords2 == '' %}
+                        <input type = "password" name="passwords2" id="password2" placeholder="请输入密码" class="input_box2" />
+                    {% else %}
+                        <input type = "password" name="passwords2" id="password2" value={{ passwords2 }} class="input_box"/>
+                    {% endif %}
+                </div>
+            {% else %}
+                <input type = "password" name="passwords1" id="password1" placeholder="请输入密码" class="input_box" />
+                <input type = "password" name="passwords2" id="password2" placeholder="密码不一致" class="input_box2" />
+            {% endif %}
+
+            <div>
+
+            </div>
+                        <div>
+                {% if tel == '号码' %}
+                    <input type = "text" name="tel" placeholder="手机号码" class="input_box"/>
+                {% elif tel == '' %}
+                    <input type = "text" name="tel" placeholder="请输入号码 " class="input_box2" />
+                {% else %}
+                    <input type = "text" name="tel" value={{ tel }} class="input_box"/>
+                {% endif %}
+            </div>
+
+            <div>
+                {% if email == '邮箱' %}
+                    <input type = "text" name="email" placeholder="邮箱" class="input_box"/>
+                {% elif email == '' %}
+                    <input type = "text" name="email" placeholder="请输入邮箱" class="input_box2"/>
+                {% else %}
+                    <input type = "text" name="email" value={{ email }} class="input_box"/>
+                {% endif %}
+            </div>
+
+            <div>
+                <div class="left">
+                    <a href={% url 'register'  %} target="_self"><input type="button" value="重新填写" class="button"/></a>
+                </div>
+                <div class="right">
+                    <a href="#" target="_blank"><input type="submit" value="确认注册" class="button"/></a>
+                </div>
+            </div>
+            <div>
+                <a href={% url 'login'  %} target="_self">已有账号？点击登录</a>
+            </div>
+        </form>
+    </div>
+    <div class="prompt"></div>
+</body>
+</html>

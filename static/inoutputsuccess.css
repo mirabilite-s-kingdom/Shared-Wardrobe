@@ -1,0 +1,1097 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Begin code here */
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #b40d1af2;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* common class */
+.container {
+    width: 70rem;
+    margin: auto;
+}
+
+.header__inner {
+    height: 4.1rem;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+    color: white;
+}
+
+.navbar,
+.header__icon,
+.navbar__item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item {
+    height: 100%;
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.header__inner a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__inner i {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+}
+
+.navbar__item .dropdown {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: white;
+}
+
+.navbar__item:hover > .dropdown {
+    display: block !important;
+}
+
+.dropdown .dropdown__item {
+    width: 12rem;
+    margin-left: 1rem;
+    padding: 1rem 0rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown .dropdown__item:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.navbar__item .dropdown a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+/* section introduce */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 54rem;
+    margin-top: 4.1rem;
+
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.intro__inner .intro__image img {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+}
+
+.intro__inner .intro__content {
+    width: 40rem;
+}
+
+.intro__title {
+    font-size: 2.2rem;
+    margin-top: 16rem;
+}
+
+.intro__big-text {
+    margin-top: 2rem;
+    color: #b40d1a;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.intro__para {
+    color: #585858;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.intro__btn {
+    background-color: #b40d1a;
+    color: white;
+    font-size: 1.2rem;
+
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    padding-right: 0.5rem;
+
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.intro__btn i {
+    padding: 0.3rem 0.7rem;
+    background-color: white;
+    margin-left: 1rem;
+    color: black;
+    border-radius: 30px;
+}
+
+/* trending */
+.trending__inner {
+    margin-top: 5rem;
+}
+
+.trending__list {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trending__list .shipping-box {
+    height: 15rem;
+    width: 30rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.trending__list .shipping-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.shipping-box__overlay {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 15, 28, 0.95);
+}
+
+.shipping-box__overlay i {
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.shipping-box__title {
+    margin-top: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.shipping-box__text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.trending-products {
+    margin-bottom: 5rem;
+}
+
+.trending-products__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    margin-bottom: 2.5rem;
+    color: #212121;
+}
+
+.trending-products__separator {
+    width: 100%;
+    height: 0.3rem;
+    background-color: black;
+    margin-bottom: 4rem;
+}
+
+.trending-products__separator ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 5.4rem;
+    height: 100%;
+
+    margin-left: 6rem;
+    background-color: white;
+    transform: skew(40deg);
+}
+
+.trending-products__separator li {
+    width: 24%;
+    height: 100%;
+    background-color: #b40d1af2;
+}
+
+.trending-products__list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.trending-products__item {
+    padding: 2rem;
+    box-shadow: 0px 0px 18px 0px rgba(19, 82, 111, 0.2);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.trending-products__name,
+.trending-products__des,
+.trending-products__price {
+    font-family: "Poppins";
+}
+
+.trending-products__name {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.trending-products__des {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: #585858;
+}
+
+.trending-products__price {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #b40d1a;
+}
+
+.trending-products__btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #b40d1a;
+
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.trending-products__btn i {
+    transform: translateY(1px);
+}
+
+.trending-products__btn:nth-child(1) i {
+    transform: translateX(-1px);
+}
+
+.trending-products__btn:nth-child(2) i {
+    transform: translateX(1px);
+}
+
+.trending-products__btn:hover {
+    background-color: #000;
+}
+
+.trending-products__btn:nth-child(1) {
+    left: -1rem;
+    transform: translateX(1px);
+}
+
+.trending-products__btn:nth-child(2) {
+    right: -1rem;
+}
+
+/*  banner */
+.banner {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.banner .background {
+    position: absolute;
+    height: 100%;
+}
+
+.banner .background-left {
+    width: 40%;
+    z-index: 1;
+}
+
+.banner .background-left img {
+    height: 100%;
+    width: 85rem;
+    z-index: 1;
+}
+
+.banner .background-right {
+    width: 60%;
+    margin-left: 40%;
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/banner-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__inner {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner__content {
+    width: 50%;
+    height: 100%;
+    font-family: "Poppins";
+    padding: 7rem 0rem;
+}
+
+.banner__discount {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.banner__title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #b40d1a;
+    margin-bottom: 2rem;
+}
+
+.banner__para {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.banner__btn {
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    border: 2px solid #b40d1a;
+
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner__btn:hover {
+    color: white;
+    background-color: #b40d1a;
+}
+
+.load__btn {
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.trending-products__list-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    transition: 0.5s;
+}
+
+.trending-products__image {
+    border-radius: 24px;
+    padding: 0.4rem 0.2rem;
+}
+
+.card-2:hover .trending-products__image {
+    background-color: #f5efec;
+}
+
+.deal {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.deal__overlay-bg {
+    padding: 6rem 0rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.deal__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f0ec;
+    border-radius: 30px;
+
+    padding: 3rem;
+}
+
+.deal__content {
+    font-family: "Poppins", sans-serif;
+    margin-left: 2.5rem;
+}
+
+.deal__image {
+    margin-right: 2.5rem;
+}
+
+.deal__intro {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.deal__title {
+    font-size: 3.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #b40d1a;
+}
+
+.deal__para {
+    line-height: 2rem;
+    font-weight: 500;
+    color: #585858;
+    margin-bottom: 1.5rem;
+}
+
+.btn__type-2 {
+    margin: 0;
+    transform: none;
+}
+
+.story {
+    padding: 5rem 0rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    background-color: #f5efec;
+}
+
+.story__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.story-card {
+    width: 22rem;
+}
+
+.story-card__info {
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    font-family: "Poppins", sans-serif;
+
+    position: relative;
+}
+
+.story-card__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 0.5rem;
+
+    background-color: #000;
+    color: white;
+}
+
+.story-card__react {
+    position: absolute;
+    bottom: 0;
+
+    color: white;
+    background-color: #000;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.story-card__react li {
+    padding: 0.7rem 0rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.story-card__content {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 1.3rem;
+    background-color: white;
+    line-height: 1.5rem;
+}
+
+.story-card__title {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-card__para {
+    font-size: 1rem;
+    color: #585858;
+    margin-bottom: 2rem;
+}
+
+.story-card__link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 0.7rem 0rem;
+    text-decoration: none;
+}
+
+.bg-1 {
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/blog-1.jpg);
+}
+
+.bg-2 {
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/blog-2.jpg);
+}
+
+.bg-3 {
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/blog-3.jpg);
+}
+
+/* logo brand */
+.logo-brand {
+    margin-bottom: 5rem;
+}
+
+.logo-brand__inner {
+    height: 10rem;
+    overflow: hidden;
+}
+
+.logo-brand__list {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    animation: logo-brand__animate 8s infinite;
+}
+
+.logo-brand__item {
+    width: 70rem;
+    margin: 0rem 2.7rem;
+}
+
+.logo-brand__item img {
+    width: 12rem;
+}
+
+@keyframes logo-brand__animate {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-23%);
+    }
+    50% {
+        transform: translateX(-46%);
+    }
+    75% {
+        transform: translateX(-69%);
+    }
+    100% {
+        transform: translate(-92%);
+    }
+}
+
+.footer {
+    background-image: url(https://weblizar.com/demo/html/Ecoast/images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    position: relative;
+    height: 320px;
+}
+
+.footer__overlay {
+    padding-top: 0.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer__inner {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    width: calc(100% / 4);
+    padding-right: 2rem;
+}
+
+.footer__logo img {
+    margin-bottom: 2rem;
+}
+
+.footer__title {
+    padding: 0.6rem 0rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-list__item {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    background-color: white;
+
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.link-list__item:hover {
+    background-color: #b40d1a;
+}
+
+.link-list__item:hover a {
+    color: white;
+}
+
+.link-list a {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-list__item {
+    margin-bottom: 1rem;
+}
+
+.contact-box {
+    width: 100%;
+}
+
+.contact-box__input {
+    text-indent: 0.6rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    border-radius: 4px;
+
+    outline: none;
+    border: none;
+    margin: 1rem 0rem;
+    width: 100%;
+}
+
+.contact-box__btn {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #b40d1a;
+
+    border: none;
+    padding: 0.8rem 1rem !important;
+    border-radius: 4px;
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+
+.footer__last-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+
+    padding: 1rem 0rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.move-top__btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+
+    background-color: #b40d1a;
+    color: white;
+    border-radius: 100%;
+
+    padding: 16px;
+}
+
+.window {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rem;
+    margin-top: -6rem;
+    width: 22rem;
+    height: 12rem;
+    z-index: 11;
+}
+
+.window .text {
+    float: left;
+    width: 20rem;
+    height: 12rem;
+    background-color: #b40d1a;
+    line-height: 12rem;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.window img {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    margin-left: 2rem;
+    margin-top: -8rem;
+    width: 20rem;
+    height: 16rem;
+    background-color: rgba(184,25,38);
+}
+
+.left {
+    float: left;
+    width: 8rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.right {
+    float: left;
+    width: 12rem;
+    height: 4rem;
+    color: white;
+}
+
+.name select {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    height: 2rem;
+    width: 8rem;
+    background-color: white;
+    border-width: 0;
+    border-radius: 5px;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.operate input {
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+    font-size: 15px;
+}
+
+.num input {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    background-color: white;
+    border-width: 0;
+    border-radius: 5px;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button {
+    width: 20rem;
+    height: 4rem;
+}
+
+.button input {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    height: 2rem;
+    width: 6rem;
+    background-color: white;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #b40d1a;
+}
+
+.shadow {
+    /*display: none;*/
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+.window2 {
+    /*display: none;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -9rem;
+    margin-top: -5rem;
+    width: 18rem;
+    height: 10rem;
+    z-index: 11;
+}
+
+.window2 .text {
+    float: left;
+    width: 16rem;
+    height: 10rem;
+    background-color: #b40d1a;
+    line-height: 10rem;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.window2 img {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 75px;
+    left: 5px;
+}
+
+.fixed .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixed .icon:before,
+.fixed .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.fixed .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.fixed .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.fixed .icon:hover:before {
+    left: 80px;
+}
+.fixed .icon:hover:after {
+    left: 0px;
+}

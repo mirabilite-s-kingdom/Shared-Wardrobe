@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport"
+          content = "width=device-width, initial-scale=1.0"/>
+    <link rel = "stylesheet"
+          href = "../../static/manager.css"/>
+    <link
+            rel = "stylesheet"
+            href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity = "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin = "anonymous"
+    />
+    <!-- font text -->
+    <link
+            href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel = "stylesheet"
+    />
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+    <script>
+        function displayWindow() {
+            document.getElementById("window").style.display = "block";
+            document.getElementById("shadow").style.display = "block";
+        }
+        function hideWindow() {
+            document.getElementById("window").style.display = "none";
+            document.getElementById("shadow").style.display = "none";
+        }
+    </script>
+    <style>
+        .success_box {
+            position: relative;
+            left: 50%;
+            margin-left: -12.5rem;
+            height: 54rem;
+            width: 25rem;
+        }
+        .success_box .success {
+            position: absolute;
+            height: 10rem;
+            width: 25rem;
+            margin-top: 19rem;
+            background-color: #b40d1af2;
+            border-radius: 10px;
+        }
+        .success_box .success .text {
+            height: 10rem;
+            width: 25rem;
+            margin-top:0px;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+    <title>仓鼠共享衣橱</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <ul class="navbar">
+            <!--等待更改链接-->
+            <li class="navbar__item-1"><a href="/mainpage/dressed" target="_self">正装</a></li>
+            <li class="navbar__item-2"><a href="/mainpage/weddingdress" target="_self">婚纱</a></li>
+            <li class="navbar__item-3"><a href="/mainpage/hignend" target="_self">高端品牌</a></li>
+            <li class="navbar__item-4"><a href="/mainpage/fastfashion" target="_self">快时尚品牌</a></li>
+            <li class="navbar__item-5"><a href="/mainpage/shopcart">购物车</a></li>
+            <li class="navbar__item-6"><a href="/mainpage/changeorder">修改订单</a></li>
+            <li class="navbar__item-7"><a href="#">联系我们</a></li>
+        </ul>
+        <div class="searching-box">
+            <input class="searching-input" type="text" placeholder="请输入搜索商品">
+            <input class="searching-button" type="button" value="搜索"></input>
+        </div>
+        <div class="header__icon">
+            <a href="profile"><i class="far fa-user"></i></a>
+            <a href="/login"><i class="far fa-sign-out"></i> </a>
+        </div>
+    </div>
+</header>
+    <div class="success_box">
+        <div class="success">
+            <div class="text">
+            下单成功！<br>
+            目前为测试阶段，暂不发货
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__overlay">
+            <div class="container footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <p class="footer__title">Created by</p>
+                        <ul class="link-list">
+                          <li class="contact-list__item">安徽大学</li>
+                          <li class="contact-list__item">计算机科学与技术学院</li>
+                            <li class="contact-list__item">计算机科学与技术专业学生</li>
+                            <li class="contact-list__item">戴铭洁、</li>
+                            <li class="contact-list__item">王乐乐、</li>
+                            <li class="contact-list__item">章悦</li>
+                        </ul>
+                    </li>
+                    <li class="footer__item">
+                        <h2 class="footer__title">Populer Tags</h2>
+                        <ul class="link-list">
+                            <li class="link-list__item"><a href="#">正装</a></li>
+                            <li class="link-list__item"><a href="#">婚纱</a></li>
+                            <li class="link-list__item"><a href="#">高端</a></li>
+                            <li class="link-list__item"><a href="#">快时尚</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__item">
+                        <h2 class="footer__title">Contact-Us</h2>
+                        <ul class="contact-list">
+                            <li class="contact-list__item">
+                                安徽大学磬苑校区
+                            </li>
+                            <li class="contact-list__item">(+86) 18815799331</li>
+                            <li class="contact-list__item">mirabiliteee@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li class="footer__item">
+                        <h2 class="footer__title">Rss</h2>
+                        <div class="contact-box">
+                            <p class="contact-box__title">订阅最新消息</p>
+                            <input
+                                    class="contact-box__input"
+                                    type="text"
+                                    placeholder="Email"
+                            />
+                            <button class="contact-box__btn">确定订阅</button>
+                        </div>
+                    </li>
+                </ul>
+                <p class="footer__last-text">
+                    2020 . All Rights Reserved Developed By 安徽大学 计算机科学与技术.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a class = "move-top__btn" href = "#"><i class = "fas fa-arrow-up"></i></a>
+<div class="fixed">
+        <a href="/mainpage" target="_self" class="after"><div class="icon"></div></a>
+    </div>
+</body>
+</html>

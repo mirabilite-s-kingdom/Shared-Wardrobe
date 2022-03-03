@@ -1,0 +1,110 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+video{
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
+    display: block;
+    -webkit-filter: grayscale(0%);//添加灰度蒙版，如果设定为100%则视频显示为黑白
+}
+p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+    color: white;
+}
+.title {
+    position: absolute;
+    margin: 80px 80px;
+    color: white;
+    font-size: 50px;
+    text-indent: 1.5em;
+    background: transparent url("images/仓库白.png") no-repeat scroll left top;
+}
+.translucent_back {
+    position: absolute;
+    height: 500px;
+    width: 1920px;
+    margin: 225px 0;
+}
+.main {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.1);
+    margin: 225px 225px;
+    color : white
+}
+.main div {
+    height: 42px;
+}
+.prompt {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    background-color: rgba(255,255,255,0);
+    margin: 225px 1620px;
+}
+.left {
+    width: 160px;
+    float: left;
+    line-height: 55px;
+
+}
+.right {
+    width: 160px;
+    float: right;
+    line-height: 55px;
+}
+.input_box {
+    width: 250px;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 5px;
+    line-height: 15px;
+    margin: 10px;
+    outline-color: rgb(59,120,221);
+}
+
+.input_box2 {
+    width: 250px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    /*line-height: 15px;*/
+    margin: 10px;
+    outline-color: rgb(59,120,221);
+    border-color: red;
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.button {
+    border: 1px solid #FFF;
+    border-radius: 9px;
+    font-size: 15px;
+    width: 120px;
+    height: 25px;
+    background-color: rgba(255,255,255,0.1);
+
+    margin: 15px;
+    color: white;
+}
+a:hover {
+    color: lightskyblue;
+}
+a {
+    text-decoration: none;
+    color: white;
+}

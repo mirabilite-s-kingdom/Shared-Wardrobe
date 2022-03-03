@@ -1,0 +1,372 @@
+
+.top {
+    height: 120px;
+    background-color: darkred;
+}
+.top .title {
+    float: left;
+    margin-left: 50px;
+    line-height: 120px;
+    font-size: 75px;
+}
+.top .user_info {
+    float: right;
+    margin-right: 50px;
+    line-height: 120px;
+}
+.navi {
+    margin: auto;
+    height: 100px;
+    width: 1200px;
+    background-color: orange;
+    line-height: 100px;
+    text-align: center;
+}
+.navi .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navi .icon:before,
+.navi .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.navi .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.navi .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.navi .icon:hover:before {
+    left: 80px;
+}
+.navi .icon:hover:after {
+    left: 0px;
+}
+.navi .pass {
+    float: left;
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-left: 135px;
+    height: 80px;
+    width: 1000px;
+    background-color: #888888;
+}
+.navi .pass .ware_species,
+.navi .pass .leasehold,
+.navi .pass .service {
+    float: left;
+    margin: 15px 0;
+    height: 50px;
+    width: 160px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    line-height: 50px;
+}
+.ware_box {
+    position: relative;
+    margin-top:50px;
+    margin-left:auto;
+    height: 500px;
+}
+.ware_box .image {
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 500px;
+    width: 500px;
+    background-color: #fff;
+}
+.ware_box .image img {
+    margin-top: 15px;
+    margin-left: 200px;
+    height:400px;
+    width:400px;
+}
+.ware_box .info {
+    float: left;
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 390px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.3);
+    list-style: none;
+}
+.ware_box .info .name {
+    height: 80px;
+    width: 800px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 35px;
+    font-width:bolder;
+}
+.ware_box .info .summary {
+    margin: 10px;
+    height: 60px;
+    width: 480px;
+    text-indent: 2em;
+    color: #000;
+}
+.ware_box .info .price {
+    height: 100px;
+    width: 500px;
+    margin-top:80px;
+    margin-left:150px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+
+.delivery_address{
+    height:60px;
+    width:500px;
+    margin-left:200px;
+}
+.ware_box .info .delivery_address .text {
+    float: left;
+    height: 60px;
+    width: 80px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+.ware_box .info .delivery_address .address {
+    float: left;
+    height: 60px;
+    width: 310px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.ware_box .info .sales {
+    float: left;
+    height: 30px;
+    width: 250px;
+    margin-left:280px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #000;
+}
+.ware_box .info .inventory {
+    float: left;
+    height: 30px;
+    width: 250px;
+    margin-left:280px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #000;
+}
+.ware_box .buy {
+    float: left;
+    margin-left: 360px;
+    height: 110px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.3);
+}
+.ware_box .buy input {
+    margin-top: 25px;
+    margin-left: 170px;
+    height: 60px;
+    width: 160px;
+    background-color: orangered;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.window1 {
+    display: none;
+    position: absolute;
+    margin-top: -300px;
+    margin-left:630px;
+    width: 500px;
+    height: 250px;
+    background-color: rgba(0,0,0,0);
+    z-index: 11;
+}
+.window1 .main {
+    float: left;
+    width: 500px;
+    height: 250px;
+    background-color: white;
+}
+.window1 .main .amount {
+    float: left;
+    height: 75px;
+    width: 400px;
+}
+.window1 .main .amount .text {
+    float: left;
+    margin-top:20px;
+    margin-left: 0px;
+    height: 75px;
+    width: 250px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 20px;
+}
+.window1 .main .amount input {
+    float: left;
+    margin-top:40px;
+    margin-left: 75px;
+    height: 28px;
+    width: 60px;
+}
+.window1 .main .shipping_address {
+    float: left;
+    height: 75px;
+    width: 400px;
+}
+.window1 .main .shipping_address .text {
+    float: left;
+    margin-left: 0px;
+    height: 75px;
+    width: 200px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 20px;
+}
+.window1 .main .shipping_address input {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 28px;
+    width: 170px;
+}
+.window1 .main .button {
+    margin-top: 30px;
+    margin-left: 180px;
+    height: 60px;
+    width: 160px;
+    background-color: orangered;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 21px;
+    color: white;
+}
+.window1 img {
+    float: left;
+    margin-top:-275px;
+    margin-left:500px;
+}
+.window2 {
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 810px;
+    width: 300px;
+    height: 200px;
+    background-color: lavender;
+    z-index: 11;
+}
+.window2 .text {
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+.window2 .button {
+    margin-top: 400px;
+    margin-left: 110px;
+    height: 35px;
+    width: 80px;
+    background-color: orangered;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.shadow {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 75px;
+    left: 5px;
+}
+
+.fixed .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixed .icon:before,
+.fixed .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.fixed .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.fixed .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.fixed .icon:hover:before {
+    left: 80px;
+}
+.fixed .icon:hover:after {
+    left: 0px;
+}
+
+.searching-input{
+        float:left;
+		width:280px;
+		height:40px;
+		outline:none;
+		border:none;
+		margin-top:20px;
+}
+
+.searching-button{
+	float:left;
+	width:50px;
+	height:40px;
+	color:white;
+	background-color:red;
+	border:none;
+	outline:none;
+	margin-top:21px;
+}
+

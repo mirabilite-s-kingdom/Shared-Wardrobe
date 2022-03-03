@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓鼠共享衣橱</title>
+    <link rel="stylesheet" href="../../static/login.css">
+</head>
+<body>
+<video id="v1" autoplay loop muted>
+    <source src="../../static/video/homepage-lead-video-001.mp4" type="video/mp4"  />
+    <link type="text/css" rel="stylesheet" href="../../static/login.css">
+</video>
+    <div class="title">
+        仓鼠共享衣橱
+    </div>
+    <div class="translucent_back"></div>
+    <div class="main">
+        <div>
+            <p>用户登录</p>
+        </div>
+        <hr width="270"/>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                {% if username == '用户名' %}
+                    {% if values == '/' %}
+                        <input type="text" name="username" placeholder={{ username }} class="input_box"/>
+                    {% else %}
+                        <input type="text" name="username" value={{ values }} class="input_box"/>
+                    {% endif %}
+                {% else %}
+                        <input type="text" name="username" placeholder="请输入用户名：{{ username }}" class="input_box2" />
+                {% endif %}
+            </div>
+            <div>
+                {% if passwords == "密码错误" %}
+                    <input type = "password" name="passwords" placeholder={{ passwords }} class="input_box2" />
+                {% else %}
+                    <input type = "password" name="passwords" placeholder={{ passwords }} class="input_box"/>
+                {% endif %}
+            </div>
+            <div>
+                <a href='#'><input type="submit" value="登 录" class="button"/></a>
+            </div>
+            <div>
+                <div class="left">
+                    <a href={% url 'register'  %} target="_self">注册账号</a>
+                </div>
+                <div class="right">
+                    <a href="#" target="_blank">找回密码</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

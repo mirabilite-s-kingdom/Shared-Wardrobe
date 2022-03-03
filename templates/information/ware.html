@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/style.css" />
+    <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+    />
+    <!-- font text -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../static/ware.css">
+    <script>
+        function displayWindow1() {
+            document.getElementById("window1").style.display = "block";
+            document.getElementById("shadow").style.display = "block";
+        }
+        function hideWindow1() {
+            document.getElementById("window1").style.display = "none";
+            document.getElementById("shadow").style.display = "none";
+        }
+    </script>
+    <title>仓鼠共享衣橱</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <ul class="navbar">
+            <!--等待更改链接-->
+            <li class="navbar__item-1"><a href="/mainpage/dressed" target="_self">正装</a></li>
+            <li class="navbar__item-2"><a href="/mainpage/weddingdress" target="_self">婚纱</a></li>
+            <li class="navbar__item-3"><a href="/mainpage/hignend" target="_self">高端品牌</a></li>
+            <li class="navbar__item-4"><a href="/mainpage/fastfashion" target="_self">快时尚品牌</a></li>
+            <li class="navbar__item-5"><a href="/mainpage/shopcart">购物车</a></li>
+            <li class="navbar__item-6"><a href="changeorder">修改订单</a></li>
+            <li class="navbar__item-7"><a href="#">联系我们</a></li>
+        </ul>
+        <div class="searching-box">
+            <input class="searching-input" type="text" placeholder="请输入搜索商品">
+            <input class="searching-button" type="button" value="搜索"></input>
+        </div>
+        <div class="header__icon">
+            <a href="profile"><i class="far fa-user"></i></a>
+            <a href="/login"><i class="far fa-sign-out"></i> </a>
+        </div>
+    </div>
+</header>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<section class="intro">
+    <div class="ware_box">
+        <div class="image">
+            <img src = "{{goods.pic_address}}">
+        </div>
+        <ul class="info">
+            <li class="name">
+                {{ goods.goods_name }}
+            </li>
+            <li class="price">
+                ￥{{ goods.price }}
+            </li>
+            <li class="delivery_address">
+                <div class="text">
+                    发货地
+                </div>
+                <div class="address">
+                    {{ goods.goods_desc }}
+                </div>
+            </li>
+            <li class="sales">
+                在售销量：{{ goods.onsale_count }}
+            </li>
+            <li class="inventory">
+                清洁数量：{{ goods.clear_count }}
+            </li>
+        </ul>
+        <div class="buy">
+            <a href="javascript:void(0)" onclick="displayWindow1()">
+                <input type="button" value="加入购物车">
+            </a>
+        </div>
+    </div>
+    <div id="window1" class="window1">
+        <div class="main">
+            <form method="post">
+                {% csrf_token %}
+                <div class="amount">
+                    <div class="text">
+                        加购商品数量:
+                    </div>
+                    <input type = "number" name="amount">
+                </div>
+                <div class="shipping_address">
+                    <div class="text">
+                        收货地址:
+                    </div>
+                    <input type="text" placeholder="请输入收货地址" name="address">
+                </div>
+                <a href="javascript:void(0)" onclick="displayWindow2(),hideWindow1()">
+                    <input type="submit" value="确认加入购物车" class="button">
+                </a>
+            </form>
+        </div>
+        <a href="javascript:void(0)" onclick="hideWindow1()">
+            <img src="../../static/images/关闭.png" height="25px" width="25px">
+        </a>
+    </div>
+    <div id="shadow" class="shadow"></div>
+</section>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<section class="trending">
+    <div class="container trending__inner">
+        <div class="trending__list">
+           <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-truck"></i>
+                    <h1 class="shipping-box__title">包邮</h1>
+                    <p class="shipping-box__text">总额 大于 ￥88</p>
+                </div>
+            </div>
+            <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-warehouse"></i>
+                    <h1 class="shipping-box__title">七天内合理退货</h1>
+                    <p class="shipping-box__text">购买安心</p>
+                </div>
+            </div>
+            <div class="shipping-box">
+                <div class="shipping-box__overlay">
+                    <i class="far fa-user"></i>
+                    <h1 class="shipping-box__title">专属客服</h1>
+                     <p class="shipping-box__text">保障服务</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__overlay">
+        <div class="container footer__inner">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Created by</p>
+                    <ul class="link-list">
+                      <li class="contact-list__item">安徽大学</li>
+                      <li class="contact-list__item">计算机科学与技术学院</li>
+                        <li class="contact-list__item">计算机科学与技术专业学生</li>
+                        <li class="contact-list__item">戴铭洁、</li>
+                        <li class="contact-list__item">王乐乐、</li>
+                        <li class="contact-list__item">章悦</li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Populer Tags</h2>
+                    <ul class="link-list">
+                        <li class="link-list__item"><a href="#">正装</a></li>
+                        <li class="link-list__item"><a href="#">婚纱</a></li>
+                        <li class="link-list__item"><a href="#">高端</a></li>
+                        <li class="link-list__item"><a href="#">快时尚</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Contact-Us</h2>
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            安徽大学磬苑校区
+                        </li>
+                        <li class="contact-list__item">(+86) 18815799331</li>
+                        <li class="contact-list__item">mirabiliteee@gmail.com</li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h2 class="footer__title">Rss</h2>
+                    <div class="contact-box">
+                        <p class="contact-box__title">订阅最新消息</p>
+                        <input
+                                class="contact-box__input"
+                                type="text"
+                                placeholder="Email"
+                        />
+                        <button class="contact-box__btn">确定订阅</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="footer__last-text">
+                2020 . All Rights Reserved Developed By 安徽大学 计算机科学与技术.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a class="move-top__btn" href="#"><i class="fas fa-arrow-up"></i></a>
+<div class="fixed">
+        <a href="/mainpage" target="_self" class="after"><div class="icon"></div></a>
+    </div>
+</body>
+</html>

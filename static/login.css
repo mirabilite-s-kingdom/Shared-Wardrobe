@@ -1,0 +1,143 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+video{
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
+    display: block;
+    -webkit-filter: grayscale(0%);//添加灰度蒙版，如果设定为100%则视频显示为黑白
+}
+div {
+    height: 75px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 75px;
+    color: white;
+}
+.title {
+    position: absolute;
+    margin: 80px 80px;
+    color: white;
+    font-size: 50px;
+    text-indent: 1.5em;
+    background: transparent url("images/仓库白.png") no-repeat scroll left top;
+}
+.main {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.1);
+    margin: 125px 225px;
+}
+.prompt {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    background-color: rgba(255,255,255,0);
+    margin: 225px 1620px;
+}
+.left {
+    width: 160px;
+    float: left;
+    line-height: 40px;
+    color: white;
+}
+.right {
+    width: 160px;
+    float: right;
+    line-height: 40px;
+    color : white;
+}
+
+.input_box {
+    width: 250px;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 5px;
+    line-height: 25px;
+    margin: 10px;
+    outline-color: rgb(59,120,221);
+}
+
+.input_box2 {
+    width: 250px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    line-height: 25px;
+    margin: 10px;
+    outline-color: rgb(59,120,221);
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+.button {
+    border: 1px solid #FFF;
+    border-radius: 9px;
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.1);
+
+    margin: 15px;
+    color: white;
+}
+a:hover {
+    color: lightskyblue;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 75px;
+    left: 5px;
+}
+
+.fixed .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixed .icon:before,
+.fixed .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.fixed .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.fixed .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.fixed .icon:hover:before {
+    left: 80px;
+}
+.fixed .icon:hover:after {
+    left: 0px;
+}

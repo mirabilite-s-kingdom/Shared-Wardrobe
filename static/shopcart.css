@@ -1,0 +1,142 @@
+
+
+.middle{
+    margin-top:100px;
+    margin-left:100px;
+    width:1500px;
+}
+
+.whole-box{
+    margin-top:100px;
+    margin-left:100px;
+    width:1500px;
+}
+
+.whole-box{
+
+}
+
+.cart-box{
+    position: relative;
+    margin-top:50px;
+    margin-left:auto;
+    width:1500px;
+}
+
+.cart-box li{
+    float:left;
+}
+
+.cart-list li{
+    width:300px;
+    float:left;
+}
+
+.check{
+    float: left;
+}
+
+.pic{
+    float: left;
+}
+.name{
+    float: left;
+}
+.price{
+    float: left;
+}
+.num{
+    float: left;
+}
+
+.detail_box {
+    position: relative;
+    margin-top:100px;
+    margin-left:auto;
+    width:1500px;
+}
+
+.detail-box li{
+    float:left;
+}
+
+.detail-list{
+    position: relative;
+    margin-top:50px;
+    margin-left:auto;
+    height: 200px;
+}
+
+.checking{
+    margin-top:115px;
+    float: left;
+    margin-left: -25px;
+}
+
+.picturing{
+    float: left;
+    margin-top:20px;
+    margin-left: 200px;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+}
+
+.picturing img {
+    float: left;
+    height:200px;
+    width:200px;
+}
+
+.naming{
+    float:left;
+    margin-top:100px;
+    margin-left:20px;
+    width:400px;
+}
+
+.pricing{
+    float:left;
+    margin-top:100px;
+    margin-left:20px;
+    width:120px;
+    color:red;
+}
+
+.numbering{
+    float:left;
+    margin-top:100px;
+    margin-left:220px;
+    width:100px;
+}
+
+.tips{
+    border:red;
+    height:500px;
+    margin-top:500px;
+}
+
+.tips-text{
+    text-align:center;
+    margin-top:50px;
+}
+
+.order{
+    margin-top:100px;
+    margin-left:1200px;
+    height:100px;
+    width:200px;
+    font-size:28px;
+}
+
+.order-btn {
+    margin-top:100px;
+    margin-left:1200px;
+    background:white;
+    height: 50px;
+    width: 150px;
+    font-size:24px;
+    color:red;
+    border-color:red;
+}
+

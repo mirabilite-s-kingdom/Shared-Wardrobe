@@ -1,0 +1,254 @@
+* {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+.top {
+    height: 120px;
+    background-color: darkred;
+}
+.top .title {
+    float: left;
+    margin-left: 50px;
+    line-height: 120px;
+    font-size: 75px;
+}
+.top .user_info {
+    float: right;
+    margin-right: 50px;
+    line-height: 120px;
+}
+.navi {
+    margin: auto;
+    height: 100px;
+    width: 1200px;
+    background-color: orange;
+    line-height: 100px;
+    text-align: center;
+}
+.navi .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navi .icon:before,
+.navi .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.navi .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.navi .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.navi .icon:hover:before {
+    left: 80px;
+}
+.navi .icon:hover:after {
+    left: 0px;
+}
+.navi .pass {
+    float: left;
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-left: 135px;
+    height: 80px;
+    width: 1000px;
+    background-color: #888888;
+}
+.navi .pass .com_species,
+.navi .pass .leasehold,
+.navi .pass .service {
+    float: left;
+    margin: 15px 0;
+    height: 50px;
+    width: 160px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    line-height: 50px;
+}
+.com_box {
+    position: relative;
+    margin: 10px auto;
+    height: 700px;
+    width: 1200px;
+    background-color: skyblue;
+}
+.com_box .image {
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 500px;
+    width: 500px;
+    background-color: #fff;
+}
+.com_box .info {
+    float: left;
+    margin-top: 70px;
+    margin-left: 50px;
+    height: 420px;
+    width: 500px;
+    background-color: pink;
+    list-style: none;
+}
+.com_box .info .name {
+    height: 100px;
+    width: 500px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 35px;
+}
+.com_box .info .summary {
+    margin: 10px;
+    height: 60px;
+    width: 480px;
+    text-indent: 2em;
+    color: #55585a;
+}
+.com_box .info .price {
+    height: 100px;
+    width: 500px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 35px;
+    color: red;
+}
+.com_box .info .delivery_place>div {
+    float: left;
+    height: 60px;
+    width: 190px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+    color: #55585a;
+}
+.com_box .info .delivery_place .address {
+    float: left;
+    height: 60px;
+    width: 310px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.com_box .info .sales {
+    float: left;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+    color: #55585a;
+}
+.com_box .info .inventory {
+    float: left;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+    color: #55585a;
+}
+.com_box .buy {
+    float: left;
+    margin-left: 50px;
+    height: 150px;
+    width: 500px;
+    background-color: lightgoldenrodyellow;
+}
+.com_box .buy .amount {
+    float: left;
+    margin: 25px;
+    height: 100px;
+    width: 200px;
+}
+.com_box .buy .amount .text {
+    float: left;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+.com_box .buy .amount input {
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    height: 28px;
+    width: 60px;
+}
+.com_box .buy .button {
+    float: left;
+    margin: 25px;
+    height: 100px;
+    width: 200px;
+}
+.com_box .buy .button input {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 80px;
+    width: 160px;
+    background-color: orangered;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 75px;
+    left: 5px;
+}
+
+.fixed .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixed .icon:before,
+.fixed .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.fixed .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.fixed .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.fixed .icon:hover:before {
+    left: 80px;
+}
+.fixed .icon:hover:after {
+    left: 0px;
+}

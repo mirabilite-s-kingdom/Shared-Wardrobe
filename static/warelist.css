@@ -1,0 +1,212 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+.top {
+    height: 120px;
+    background-color: darkred;
+}
+.top .title {
+    float: left;
+    margin-left: 50px;
+    line-height: 120px;
+    font-size: 75px;
+}
+.top .user_info {
+    float: right;
+    margin-right: 50px;
+    line-height: 120px;
+}
+.navi {
+    margin: auto;
+    height: 100px;
+    width: 1200px;
+    background-color: orange;
+    line-height: 100px;
+    text-align: center;
+}
+.navi .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navi .icon:before,
+.navi .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.navi .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.navi .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.navi .icon:hover:before {
+    left: 80px;
+}
+.navi .icon:hover:after {
+    left: 0px;
+}
+.navi .species {
+    float: left;
+    margin-left: 100px;
+    height: 100px;
+    width: 150px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 45px;
+}
+.navi .filter {
+    float: left;
+    margin-top: 10px;
+    height: 80px;
+    width: 700px;
+    background-color: yellow;
+    line-height: 80px;
+    text-align: center;
+}
+.com_info_ul {
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 700px;
+    width: 1600px;
+    list-style: none;
+    background-color: rgba(255,255,255,0.3);
+}
+.com_info_ul .com_info {
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+}
+.com_info_ul .com_info .image {
+    height: 250px;
+    width: 250px;
+    margin-top:0;
+    margin-left:145px;
+}
+.com_info_ul .com_info .info {
+    list-style: none;
+    height: 100px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.3);
+}
+.com_info_ul .com_info .info .info_name {
+    float: left;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.com_info_ul .com_info .info .info_price {
+    float: left;
+    margin-top:50px;
+    margin-left: 150px;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+.com_info_ul .com_info .info .info_sales {
+    float: left;
+    height: 25px;
+    width: 150px;
+    margin-top:0px;
+    margin-left:200px;
+    line-height: 35px;
+    text-indent: 20px;
+    font-size: 10px;
+    color: #aaaaaa;
+}
+.com_info_ul .com_info .info .info_inventory {
+    float: left;
+    height: 25px;
+    width: 150px;
+    margin-top:20px;
+    margin-left:200px;
+    line-height: 25px;
+    text-indent: 20px;
+    font-size: 10px;
+    color: #aaaaaa;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 75px;
+    left: 5px;
+}
+
+.fixed .icon {
+    position: absolute;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fixed .icon:before,
+.fixed .icon:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.fixed .icon:before {
+    left: 0px;
+    background: url(../static/images/仓鼠.png) no-repeat;
+}
+.fixed .icon:after {
+    left: 80px;
+    background: url(../static/images/主页.png) no-repeat;
+}
+.fixed .icon:hover:before {
+    left: 80px;
+}
+.fixed .icon:hover:after {
+    left: 0px;
+}
+
+.searching-input{
+        float:left;
+		width:280px;
+		height:40px;
+		outline:none;
+		border:none;
+		margin-top:20px;
+}
+
+.searching-button{
+	float:left;
+	width:50px;
+	height:40px;
+	color:white;
+	background-color:red;
+	border:none;
+	outline:none;
+	margin-top:21px;
+}
