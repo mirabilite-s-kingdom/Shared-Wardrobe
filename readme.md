@@ -9,30 +9,36 @@
 
 ---
 登录界面:
+<br>
 ![avatar](z-show-pics/登录.png)
 
 ---
 商城主页：
+<br>
 ![avatar](z-show-pics/主页.png)
 
 ---
 正装界面：
+<br>
 ![avatar](z-show-pics/正装.png)
 
 ---
 婚纱界面：
+<br>
 ![avatar](z-show-pics/婚纱.png)
 
 ---
 具体商品界面：
+<br>
 ![avatar](z-show-pics/具体商品界面.png)
 
 ---
 修改订单界面：
+<br>
 ![avatar](z-show-pics/修改订单.png)
 
 ---
 略...
 
 ## 项目亮点 ##
-&nbsp; &nbsp; &nbsp; &nbsp; 在设计时，针对不同的场合需求对租赁的服装进行分类，主要有正装、婚纱、高端品牌、和快时尚品牌等，使顾客可以更好地S按需租赁。
+&nbsp; &nbsp; &nbsp; &nbsp; 在设计时，针对不同的场合需求对租赁的服装进行分类，主要有正装、婚纱、高端品牌、和快时尚品牌等，使顾客可以更好地按需租赁。
