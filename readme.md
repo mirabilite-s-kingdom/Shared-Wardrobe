@@ -30,7 +30,18 @@ AHU 数据库课程设计 SW共享衣橱（Web项目）
 
 我们使用的是MySQL数据库，所以需要您先将[.sql](swardrobe.sql)导入到您的数据库中，并在setting.py中链接您的数据库
 
-
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'shared_wardrobe',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': '123456'
+    }
+}
+```
 
 ### 4 运行
 
@@ -51,6 +62,10 @@ cd 至根目录下 `python manage.py runserver`
 <br>
 ![avatar](z-show-pics/主页.png)
 
+## Django的基本使用方法
+
+对Django的基本使用请见：[Django初见教程](https://www.cnblogs.com/kumori/p/15962582.html)
+
 ## 功能模块
 
 - [x] 注册&登录模块
@@ -64,3 +79,7 @@ cd 至根目录下 `python manage.py runserver`
 - [ ] 检索
 - [ ] 推荐算法
 - [ ] 客服
+
+## Thanks
+
+如果您喜欢这个课设，或者能够帮到您，请点一颗⭐，谢谢！
