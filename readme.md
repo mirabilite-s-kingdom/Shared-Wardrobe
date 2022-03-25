@@ -28,7 +28,7 @@ AHU 数据库课程设计 SW共享衣橱（Web项目）
 
 ### 3 导入数据库
 
-我们使用的是MySQL数据库，所以需要您先将[数据库.sql](sharewardrobe.sql)导入到您的数据库中，并在setting.py中链接您的数据库
+我们使用的是MySQL数据库，所以需要您先将[.sql](swardrobe.sql)导入到您的数据库中，并在setting.py中链接您的数据库
 
 
 
@@ -44,12 +44,12 @@ cd 至根目录下 `python manage.py runserver`
 ---
 登录界面:
 <br>
-![avatar]()
+![avatar](z-show-pics/登录.png)
 
 ---
 商城主页：
 <br>
-![avatar](https://pic.imgdb.cn/item/623dd09127f86abb2a23f43b.png)
+![avatar](z-show-pics/主页.png)
 
 ## 功能模块
 
