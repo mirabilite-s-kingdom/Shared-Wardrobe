@@ -42,12 +42,12 @@ cd 至根目录下 `python manage.py runserver`
 ---
 登录界面:
 <br>
-![avatar](z-show-pics/登录.png)
+![avatar](https://pic.imgdb.cn/item/623dd06927f86abb2a22e076.png)
 
 ---
 商城主页：
 <br>
-![avatar](z-show-pics/主页.png)
+![avatar](https://pic.imgdb.cn/item/623dd09127f86abb2a23f43b.png)
 
 ## 功能模块
 
