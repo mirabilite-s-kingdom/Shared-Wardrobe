@@ -1,6 +1,6 @@
 # Shared Wardrobe共享衣橱电商系统
 
-AHU 数据库课程设计 SW共享衣橱（Web项目）
+数据库课程设计 SW共享衣橱（Web项目）
 
 ## 项目背景
 
